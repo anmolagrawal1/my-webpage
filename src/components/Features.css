@@ -1,0 +1,57 @@
+/* Feature Section */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .Features{
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .feature-card {
+    background-color: rgb(225, 225, 225);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(236, 234, 234, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #1e88e5;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

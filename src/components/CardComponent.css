@@ -1,0 +1,71 @@
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    min-height: 100vh;
+    margin-top: -100px;
+  }
+  
+  /* Card styling */
+  .card {
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* Title styling */
+  .card-title {
+    font-size: 1.5rem;
+    margin: 16px;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    margin: 0 16px 16px;
+    color: #555;
+  }
+  
+  /* Label styling */
+  .label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .inspiration {
+    background-color: #3498db;
+  }
+  
+  .food {
+    background-color: #e74c3c;
+  }
+  
+  .resources {
+    background-color: #8e44ad;
+  }
+  

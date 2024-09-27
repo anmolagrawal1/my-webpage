@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 0;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .boost-productivity, .automated-tasks {
+    flex-direction: row;
+  }
+  
+  .boost-productivity .illustration,
+  .automated-tasks .illustration {
+    width: 100%;
+    height: 50%;
+  
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .astronaut::before {
+    content: '';
+    width: 350px;
+    height: 350px;
+    background-image: url('/Users/developer/Desktop/astronaut.png');
+    background-size: 100%;
+  }
+  
+  .robot::before {
+    content: '';
+    width: 350px;
+    height: 400px;
+    background-image: url('file:///Users/developer/Desktop/work.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .content h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .content ul li {
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .content ul li::before {
+    content: '•';
+    color: #ffeb3b;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }

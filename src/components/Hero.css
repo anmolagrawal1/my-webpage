@@ -1,0 +1,234 @@
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  font-size: xx-large;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.hero h1 span {
+  color: #6a5acd; /* using this color */
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-left: 450px;
+  margin-right: 450px;
+  color: gray;
+}
+.desc{
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-left: 450px;
+  margin-right: 450px;
+  color: gray;
+ margin-top: 150px;
+}
+
+
+.cta-button {
+  background-color: #6a5acd;
+  color: azure;
+  border: ridge;
+  cursor: pointer;
+  border-radius: 45px;
+  padding: 15px 30px;
+  margin: 20px auto; 
+  display: block;
+  max-width: 400px; /* Limit the maximum width */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.ctalan-button {
+  background-color: transparent;
+border-color:transparent;
+  color: black;
+  cursor: pointer;
+  max-width: 100px; /* Limit width on larger screens */
+  padding: 5px 10px;
+  
+}
+
+.btn-group button {
+   
+  margin: 10px auto; /* Center button group */
+  padding: 10px 20px;
+  max-width: 300px; 
+
+  margin-bottom: -10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cta-button, .ctalan-button, .btn-group button {
+    padding: 12px 20px; 
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-button, .ctalan-button, .btn-group button {
+    padding: 10px 15px; 
+    font-size: 14px; 
+    max-width: 100%; 
+  }
+}
+
+
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 1000px;
+
+}
+
+.logo-container img {
+  max-height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-container img:hover {
+  transform: scale(1.1);
+}
+
+.h1 {
+  margin: auto;
+  font-size: xx-large;
+}
+
+.h2 {
+  margin: -20px;
+  color: #6a5acd;
+}
+
+/* Add responsiveness with media queries */
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .hero p {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .cta-button {
+    margin-left: 550px;
+  }
+
+  .ctalan-button {
+    margin-left: 585px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 45px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .hero p {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .cta-button {
+    margin-left: 450px;
+  }
+
+  .ctalan-button {
+    margin-left: 485px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .hero p {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .cta-button {
+    margin-left: 350px;
+  }
+
+  .ctalan-button {
+    margin-left: 375px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 50px 10px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .hero p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .cta-button {
+    margin-left: 100px;
+  }
+
+  .ctalan-button {
+    margin-left: 125px;
+  }
+
+  .logo-container img {
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .cta-button {
+    margin-left: 50px;
+  }
+
+  .ctalan-button {
+    margin-left: 75px;
+  }
+}

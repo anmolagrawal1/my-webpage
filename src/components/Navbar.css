@@ -1,0 +1,117 @@
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo styles */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a5acd; /* color for the logo */
+    cursor: pointer;
+  }
+  
+  /* Nav links styles */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #6a5acd; /* Changing color on the hover */
+  }
+  
+  /* Auth buttons (Sign In/Sign Up) */
+  .auth-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .auth-links a {
+    text-decoration: none;
+    color: #6a5acd;
+    font-weight: bold;
+  }
+  
+  .auth-links button {
+    padding: 10px 20px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-links button:hover {
+    background-color: #5d4bc9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide nav links on small screens */
+    }
+  
+    .auth-links {
+      gap: 10px;
+    }
+  
+    .navbar {
+      padding: 15px 20px; /* Adjusting padding for smaller screens */
+    }
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    margin: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    /* Toggle nav links when hamburger is clicked */
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links li {
+      margin-bottom: 10px;
+    }
+  }
+  
